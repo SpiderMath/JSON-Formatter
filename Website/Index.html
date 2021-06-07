@@ -7,9 +7,10 @@
 	<title>JSON Formatter</title>
 </head>
 <body>
-	<form onsubmit="onSubmit()">
+	<form>
 		<textarea placeholder="Put Your JSON Here!" id="user-input"></textarea>
-		<button type="submit">Format!</button>
+		<textarea placeholder="Your Result Will Appear Here" id="user-response"></textarea>
+		<button type="button" onclick="onClick()">Format!</button>
 	</form>
 	<script src="/Dist/App.js"></script>
 </body>
