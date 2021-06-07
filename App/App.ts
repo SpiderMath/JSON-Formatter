@@ -16,5 +16,7 @@ function onClick() {
 	}
 
 	// @ts-ignore
-	outputElement.innerHTML = JSON.stringify(json, null, "\t");
+	const code = JSON.stringify(json, null, "\t");
+	// @ts-ignore
+	outputElement.innerHTML = code;
 }
