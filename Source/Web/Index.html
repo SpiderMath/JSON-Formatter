@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html>
-	<head>
+	<link>
 		<title>JSON Formatter</title>
+		<style type="text/css">
+			textarea {
+				resize: none;
+				width: 40%;
+			}
+
+			#input {
+				float: left;
+			}
+
+			#output {
+				float: right;
+			}
+
+			.clear {
+				clear: both;
+				padding: 10px;
+			}
+
+			.button {
+				padding: 10px;
+				border-radius: 10px;
+				border-color: teal;
+				margin-left: 50%;
+				margin-right: 50%;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="nav"></div>
 		<div class="form">
-			<textarea class="json" id="input" placeholder="Put your JSON here"></textarea>
-			<textarea class="json" id="output" placeholder="Formatter JSON will show here"></textarea>
-			<button onclick="buttonClick()">Format!</button>
-		</div>
+			<textarea class="json" id="input" contenteditable></textarea>
+			<textarea class="json" id="output" contenteditable></textarea>
+			<div class="clear"></div>
+			<button onclick="buttonClick()" class="button">Format!</button>
+			<button onclick="copyToClipboard()" class="button">Copy</button>
 		<div class="footer"></div>
 	</body>
 	<script src="../Dist/App.js"></script>

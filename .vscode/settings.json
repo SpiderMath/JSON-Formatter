@@ -3,7 +3,7 @@
 	"powermode.enableShake": false,
 	"powermode.presets" : "particles",
 	"powermode.enableStatusBarComboTimer": false,
-	"workbench.colorTheme": "Atom One Light",
+	"workbench.colorTheme": "Operator Mono Dark Theme",
 	"liveServer.settings.port": 6969,
 	"powermode.enableExplosions": true,
 }

@@ -11,7 +11,19 @@ function buttonClick() {
         data = JSON.parse(input);
     }
     catch (err) {
-        return alert(`Invalid JSON provided\n${err.message}`);
+        return alert(`
+			Invalid JSON provided
+			${err.message}
+		`.replaceAll("	", ""));
     }
     outputElem.innerText = JSON.stringify(data, null, "\t");
+}
+function copyToClipboard() {
+    const outputElem = document.getElementById("output");
+    // @ts-ignore
+    outputElem.select();
+    // @ts-ignore
+    outputElem.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+    alert("Copied the data to your clipboard!");
 }
