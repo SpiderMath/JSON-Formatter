@@ -3,7 +3,7 @@
 	"powermode.enableShake": false,
 	"powermode.presets" : "particles",
 	"powermode.enableStatusBarComboTimer": false,
-	"workbench.colorTheme": "Monokai Pro (Filter Ristretto)",
+	"workbench.colorTheme": "Atom One Light",
 	"liveServer.settings.port": 6969,
-	"powermode.enableExplosions": true
+	"powermode.enableExplosions": true,
 }
